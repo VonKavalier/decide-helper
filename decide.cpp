@@ -9,7 +9,7 @@ int main(){
     srand (time(NULL));
     int choix;
 
-    cout << "Entre combien de choses hésites-tu ? : ";
+    cout << "Between how many things your mind is ? : ";
 
     cin >> choix;
 
@@ -20,15 +20,15 @@ int main(){
     string choses[choix];
 
     for(int i=0; i<choix; i++){
-        cout << "Rentre la chose " << i+1 << ": ";
+        cout << "Enter the thing number " << i+1 << ": ";
         getline(cin, chose);
         choses[i]=chose;
     }
-    cout << "Réflexion intense...\n";
+    cout << "Intense reflexion incoming...\n";
 
     sleep(3);
 
-    cout << "Décision : " << choses[rand() % choix+1] << "\n";
+    cout << "Decision : " << choses[rand() % choix+1] << "\n";
 
     return 0;
 
